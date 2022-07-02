@@ -26,4 +26,3 @@ DumpBook è uno script da me scritto in Python per salvare i libri digitali dell
 * Le coordinate impostate nel file andranno bene solo con la stessa configurazione delle finestre e dei monitor, perciò si consiglia di mettere a schermo intero il reader dei libri.
 * Avendo uno schermo con risoluzione più ampia si otterrà una qualità di immagine più alta, ma il file sarà più pesante.
 * Per l'utilizzo su Mac si deve acconsentire alla registrazione schermo, all'accesso disco e al controllo accessibilità, ma il popup si aprirà automaticamente al primo avvio dello script.
-{% include analytics.html %}
