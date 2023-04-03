@@ -12,7 +12,7 @@ bookwid = 662
 bookhei = 892
 outputdir = "./Out/"
 pdfout = "DumpBook.pdf"
-
+sleeptime = 1.5
 
 
 i = 1
@@ -27,7 +27,7 @@ print(bookleft,booktop, bookwid, bookhei)
 time.sleep(3)
 while i <= pages:
     print ("Taking page ", str(i))
-    time.sleep(2.5)    
+    time.sleep(sleeptime)    
     fn = outputdir + str(i).zfill(3) + ".png"
     print ("Saving to " + fn)
     im = pyautogui.screenshot(fn,region=(bookleft,booktop, bookwid, bookhei))
