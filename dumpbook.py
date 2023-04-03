@@ -4,13 +4,18 @@ import os
 import glob
 
 
+#Configura qui parametri
+pages = 493
+bookleft = 597
+booktop = 87
+bookwid = 662
+bookhei = 892
+outputdir = "./Out/"
+pdfout = "DumpBook.pdf"
+
+
+
 i = 1
-pages = 504
-bookleft = 397 *2
-booktop = 64*2
-bookwid = 581*2
-bookhei = 789*2
-outputdir = "/Users/aleg/Documents/OUT/"
 files = glob.glob(outputdir + "*")
 for f in files:
     os.remove(f)
@@ -35,5 +40,5 @@ for r, _, f in sorted(os.walk(outputdir)):
 		if not fname.endswith(".png"):
 			continue
 		imgs.append(os.path.join(r, fname))
-with open("Dumpbook.pdf","wb") as f:
+with open(pdfout,"wb") as f:
 	f.write(img2pdf.convert(imgs))
